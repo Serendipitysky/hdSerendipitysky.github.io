@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>作业</title>
+
+    <style>
+	
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+	<link rel="stylesheet" href="css/glcss.css">
+    <script src="https://js.arcgis.com/4.19/"></script>
+    <script src="js/link.js"></script>	
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+	<div id="header" style="background-color:null;">
+	<h1 style="margin-bottom:0;">野火灾害分析</h1></div>
+    <div id="viewDiv2"></div>
+	<div id="overviewDiv"><div id="extentDiv"></div>
+    </div>
+    <div id="viewDiv"></div>
+	<span id="coor_scale">
+		    <div id="coordinateDisplay"></div>
+		    <div id="scaleDisplay"></div>
+	</span>
+<!--    加入图层-->
+    <div id="LayerBox">
+        <div class="dropdown">
+        <button class="dropbtn">添加图层<button>
+        <div class="dropdown-content">
+			<div class="SingleBox">
+			    <p>野火恢复力人口普查区</p>
+			    <input type="button" id="Add_layer1" class="button_Add" value="加入">
+			    <input type="button" id="Remove_layer1" class="button_Remove" value="删除">
+			    <br/>
+			    
+			</div>
+            <div class="SingleBox">
+                <p>野火发生点</p>
+                <input type="button" id="Add_layer2" class="button_Add" value="加入">
+                <input type="button" id="Remove_layer2" class="button_Remove" value="删除">
+                <br/>
+               
+            </div>
+            <div class="SingleBox">
+                <p>气温</p>
+                <input type="button" id="Add_layer3" class="button_Add" value="加入">
+                <input type="button" id="Remove_layer3" class="button_Remove" value="删除">
+                <br/>
+                
+            </div>
+            <div class="SingleBox">
+                <p>森林</p>
+                <input type="button" id="Add_layer4" class="button_Add" value="加入">
+                <input type="button" id="Remove_layer4" class="button_Remove" value="删除">
+                <br/>
+                
+            </div>
+			
+        </div>
+		</div>
+        <div id="Layers">
+        
+    </div>
+	</div>
+<!--切换底图-->
+    <div id="BaseMap_div">
+       <div class="dropdown2">
+       		<button class="dropbtn2">更换底图<button>	
+       		<div class="dropdown2-content">
+				<p>osm</p>
+				<input type="radio" id="osm" name="basemap" checked>
+				<br />
+				<p>streets</p>
+				<input type="radio" id="streets" name="basemap">
+				<br />
+				<p>oceans</p>
+				<input type="radio" id="oceans" name="basemap">
+				<br />
+				<p>hybrid</p>
+				<input type="radio" id="hybrid" name="basemap">
+				<br />
+        </div>
+	
+    </div>
+
+<!--    经纬度坐标 比例尺-->
+    <span id="coor_scale">
+        <div id="coordinateDisplay"></div>
+        <div id="scaleDisplay"></div>
+    </span>
+
+
+</body>
+
+</html>
